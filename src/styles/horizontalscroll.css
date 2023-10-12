@@ -24,17 +24,16 @@
     /* Hide scrollbars for WebKit browsers (Chrome, Safari) */
 }
 
-/* Define how the scroll items should snap */
 .scroll-item {
     flex: 0 0 auto;
-    /* Ensure items are of fixed size */
     width: 120px;
     margin-right: 20px;
-    /* Adjust the margin as needed */
     scroll-snap-align: center;
-    /* Specify snapping alignment */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center the text */
 }
-
 
 .scroll-item-img-container {
     width: 120px;
@@ -43,12 +42,50 @@
     border-radius: 10px;
     background: rgba(238, 214, 214, 0.40);
     backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
-.scroll-item-img {
-    width: 118px;
-    height: 100px;
+.scroll-item-img-container > img {
+    border-radius: 10px; 
+}
+
+
+.scroll-item-img-0 {
+    min-width: 101.197px;
+    min-height: 98.279px;
+    padding: 10px 9px;
     flex-shrink: 0;
+}
+.scroll-item-img-1 {
+    min-width: 90.97px;
+    min-height: 96.112px;
+    flex-shrink: 0;
+}
+.scroll-item-img-2 {
+    min-width: 101.197px;
+    min-height: 98.279px;
+    flex-shrink: 0;
+
+}
+.scroll-item-img-3 {
+    min-width: 101.197px;
+    min-height: 98.279px;
+    flex-shrink: 0;
+
+}
+.scroll-item-img-4 {
+    min-width: 115.197px;
+    min-height: 115.279px; 
+    flex-shrink: 0;
+
+}
+.scroll-item-img-5 {
+    min-width: 101.197px;
+    min-height: 98.279px; 
+    flex-shrink: 0;
+
 }
 
 .scroll-item-text {
