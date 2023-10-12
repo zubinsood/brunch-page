@@ -4,7 +4,7 @@ import './App.css';
 import Footer from './components/Footer'
 import HorizontalScroll from './components/HorizontalScroll'
 import Featured from './components/Featured'
-
+import Drinks from './components/Drinks';
 function App() {
   const [featuredTitle, setFeaturedTitle] = useState<string>("Davelle’s Original Uni Pasta");
   const [featuredCardDescription, setFeaturedCardDescription] = useState<string>(
@@ -16,6 +16,7 @@ function App() {
     <div className="App">
       <HorizontalScroll/>
       <Featured title = {featuredTitle} description = {featuredCardDescription} buttonText= {featuredCardButtonText} imageUrl= {featuredCardImageUrl}/>
+      <Drinks/>
       <Footer/>
     </div>
   );

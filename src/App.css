@@ -127,7 +127,7 @@
   align-items: center;
 }
 
-.featured-title {
+.featured-title, .drinks-title {
   color: rgba(220, 120, 144, 1);
   text-align: left;
   width: 299px;
@@ -214,3 +214,73 @@
   letter-spacing: -0.165px;
   padding: 5px 27px 6px 28px;
 }
+
+/* In your drinks.css file */
+.description {
+  color: #000;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: SF Pro Text;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.165px;
+  width: 227px;
+  margin-left: 10px;
+}
+
+.row{
+  display: flex;
+  padding: 9px;
+  color: #000;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: SF Pro Text;
+font-size: 11px;
+font-style: normal;
+font-weight: 400;
+line-height: 15px; /* 136.364% */
+letter-spacing: -0.165px;
+
+
+}
+.image-1 {
+  height: 107px;
+  width: 107px;
+  flex-shrink: 0;
+  background-image: url('../public/image/Mojito_Drink.png');
+  background-size: cover; 
+  
+}
+
+.image-2 {
+  height: 107px;
+  width: 107px;
+  background-image: url('../public/image/Coffee_drink\ 1.png');
+  background-size: cover; 
+}
+
+
+.image-3 {
+  height: 107px;
+  width: 107px;
+  background-image: url('../public/image/Caramel_Coffee\ 1.png');
+  background-size: cover; 
+}
+ .drinks-button {
+  width: 127px;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background-color: #DC7890;
+  border: 0px;
+ }
+ .drinks-button-text {
+  color: #EED6D6;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: SF Pro Text;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.165px;
+ }
