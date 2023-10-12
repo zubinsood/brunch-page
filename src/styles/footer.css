@@ -37,8 +37,7 @@
     height: 120.128px;
     flex-shrink: 0;
     margin-left: 11px;
-    background: url('../../public/image/brunchspot2.png') 50% / cover no-repeat;
-
+    background: var(--footer-icon);
 }
 
 .info-box {
