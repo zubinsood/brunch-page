@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import HorizontalScroll from './components/HorizontalScroll'
 import Featured from './components/Featured'
 import NavBar from './components/NavBar';
+import Carousel from './components/Carousel';
 
 function App() {
   const [featuredTitle, setFeaturedTitle] = useState<string>("Davelle’s Original Uni Pasta");
@@ -26,6 +27,7 @@ function App() {
   return (
     <ThemeProvider>
       <NavBar />
+      <Carousel />
       <HorizontalScroll items={scrollItems}/>
       <Featured title = {featuredTitle} description = {featuredCardDescription} buttonText= {featuredCardButtonText} imageUrl= {featuredCardImageUrl}/>
       <Footer/>
