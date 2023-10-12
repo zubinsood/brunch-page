@@ -1,0 +1,39 @@
+.carousel {
+    width: 393px;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in;
+}
+
+.icon-bar {
+    position: absolute;
+    width: 66px;
+    height: 20px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    bottom: 7px;
+    margin: 0 164px 0 163px;
+    border-radius: 44.5px;
+    background: var(--iconbar-color);
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(217, 217, 217, 0.7);
+}
+
+.dot.active {
+    background-color: white;
+}
