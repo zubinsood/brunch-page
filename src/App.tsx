@@ -1,11 +1,13 @@
 import React from 'react';
-import NavBar from './components/NavBar';
 import { ThemeProvider } from './contexts/ThemeContext';
+import NavBar from './components/NavBar';
+import Carousel from './components/Carousel';
 
 function App() {
   return (
     <ThemeProvider>
       <NavBar />
+      <Carousel />
     </ThemeProvider>
   );
 }
