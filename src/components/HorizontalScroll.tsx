@@ -1,14 +1,21 @@
-import React from 'react'
+import React from 'react';
+import HorizontalScrollItem from './HorizontalScrollItem';
 
-function HorizontalScroll() {
-  return (
-    <div>
-      <div className='scroll-title'>Favorite Toasts</div>
-      <div className='main-scroll'></div>
-    
-    </div>
-
-  )
+interface HorizontalScrollProps {
+  items: { imageUrl: string; text: string }[];
 }
 
-export default HorizontalScroll
+const HorizontalScroll: React.FC<HorizontalScrollProps> = ({ items }) => {
+  return (
+    <div className="horizontal-scroll">
+      <div className='scroll-title'>Favorite Toasts</div>
+      <div className="scroll-container">
+        {items.map((item, index) => (
+          <HorizontalScrollItem key={index} imageUrl={item.imageUrl} text={item.text} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default HorizontalScroll;
