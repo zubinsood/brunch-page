@@ -10,7 +10,6 @@
   --primary-color: #DC7890;
   --iconbar-color: rgba(217, 217, 217, 0.4);
   --footer-bg: rgba(220, 120, 144, 0.25);
-  --footer-icon: url('../public/images/light-toast.png') 50% / cover no-repeat;
   --card-text: #000;
   --card-bg: #fff;
   --button-text: #EED6D6;
@@ -22,7 +21,6 @@
   --primary-color: #CFECC4;
   --iconbar-color: rgba(30, 30, 30, 0.60);
   --footer-bg: #222;
-  --footer-icon: url('../public/images/dark-toast.png') 50% / cover no-repeat;
   --card-text: #fff;
   --card-bg: #414141;
   --button-text: #CFECC4;
@@ -49,7 +47,7 @@ code {
   src: url('../public/fonts/SF-Pro-Text.otf') format('otf'),
 }
 
-.featured-title, .scroll-title {
+.featured-title, .scroll-title, .drinks-title {
   color: var(--primary-color);
   text-align: left;
   width: 299px;
@@ -94,3 +92,4 @@ code {
 @import url('./styles/footer.css');
 @import url('./styles/horizontalscroll.css');
 @import url('./styles/navbar.css');
+@import url('./styles/drinks.css');

@@ -7,6 +7,7 @@ import HorizontalScroll from './components/HorizontalScroll'
 import Featured from './components/Featured'
 import NavBar from './components/NavBar';
 import Carousel from './components/Carousel';
+import Drinks from './components/Drinks';
 
 function App() {
   const [featuredTitle, setFeaturedTitle] = useState<string>("Davelle’s Original Uni Pasta");
@@ -30,6 +31,7 @@ function App() {
       <Carousel />
       <HorizontalScroll items={scrollItems}/>
       <Featured title = {featuredTitle} description = {featuredCardDescription} buttonText= {featuredCardButtonText} imageUrl= {featuredCardImageUrl}/>
+      <Drinks />
       <Footer/>
     </ThemeProvider>
   );

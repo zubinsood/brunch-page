@@ -1,0 +1,81 @@
+/* In your drinks.css file */
+.description {
+    color: var(--card-text);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Helvetica;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.165px;
+    width: 227px;
+    margin-left: 10px;
+  }
+  
+  .drink-name {
+    color: var(--card-text);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: SF Pro Text;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.165px;
+
+  }
+
+  .row{
+    display: flex;
+    padding: 9px;
+    color: #000;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Helvetica;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 15px; /* 136.364% */
+  letter-spacing: -0.165px;
+  
+  
+  }
+  .image-1 {
+    height: 107px;
+    width: 107px;
+    background-image: url('../../public/images/Mojito_Drink.png');
+    background-size: cover; 
+    
+  }
+  
+  .image-2 {
+    height: 107px;
+    width: 107px;
+    background-image: url('../../public/images/Coffee_drink.png');
+    background-size: cover; 
+  }
+  
+  
+  .image-3 {
+    height: 120px;
+    width: 120px;
+    background-image: url('../../public/images/Caramel_Coffee.png');
+    background-size: cover; 
+  }
+   .drinks-button {
+    width: 127px;
+    height: 28px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background-color: var(--button-bg);
+    border: 0px;
+    
+   }
+   .drinks-button-text {
+    color: var(--button-text);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: SF Pro Text;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.165px;
+   }
