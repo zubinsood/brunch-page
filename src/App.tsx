@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { ThemeProvider } from './contexts/ThemeContext';
 import logo from './logo.svg';
 import './App.css';
 import Footer from './components/Footer'
 import HorizontalScroll from './components/HorizontalScroll'
 import Featured from './components/Featured'
+import NavBar from './components/NavBar';
 
 function App() {
   const [featuredTitle, setFeaturedTitle] = useState<string>("Davelle’s Original Uni Pasta");
@@ -22,11 +24,12 @@ function App() {
   ]);
 
   return (
-    <div className="App">
+    <ThemeProvider>
+      <NavBar />
       <HorizontalScroll items={scrollItems}/>
       <Featured title = {featuredTitle} description = {featuredCardDescription} buttonText= {featuredCardButtonText} imageUrl= {featuredCardImageUrl}/>
       <Footer/>
-    </div>
+    </ThemeProvider>
   );
 }
 
