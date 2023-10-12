@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Footer from './components/Footer'
 import HorizontalScroll from './components/HorizontalScroll'
 import Featured from './components/Featured'
 
@@ -15,7 +16,7 @@ function App() {
     <div className="App">
       <HorizontalScroll/>
       <Featured title = {featuredTitle} description = {featuredCardDescription} buttonText= {featuredCardButtonText} imageUrl= {featuredCardImageUrl}/>
-      <div>hey</div>
+      <Footer/>
     </div>
   );
 }
