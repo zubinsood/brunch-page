@@ -1,24 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import HorizontalScroll from './components/HorizontalScroll'
+import Featured from './components/Featured'
 
 function App() {
+  const [featuredTitle, setFeaturedTitle] = useState<string>("Davelle’s Original Uni Pasta");
+  const [featuredCardDescription, setFeaturedCardDescription] = useState<string>(
+    "An uni (sea urchin) lover’s heaven filled with umami. Limited quantity available daily!"
+  );
+  const [featuredCardButtonText, setFeaturedCardButtonText] = useState<string>("Read More");
+  const [featuredCardImageUrl, setFeaturedCardImageUrl] = useState<string>("your-image-url.jpg");
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HorizontalScroll/>
+      <Featured title = {featuredTitle} description = {featuredCardDescription} buttonText= {featuredCardButtonText} imageUrl= {featuredCardImageUrl}/>
+      <div>hey</div>
     </div>
   );
 }
