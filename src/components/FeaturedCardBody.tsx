@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from './Button';
 
 interface CardBodyProps {
   title: string;
@@ -11,9 +12,7 @@ function CardBody({ title, description, buttonText }: CardBodyProps) {
     <div className='full-card-body'>
       <div className='full-card-body-title'>{title}</div>
       <div className='full-card-body-text'>{description}</div>
-      <div className='full-card-body-button'>
-        <div className='full-card-body-button-text'>{buttonText}</div>
-      </div>
+      <Button buttonText={buttonText}/>
     </div>
   );
 }
