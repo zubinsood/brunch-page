@@ -2,10 +2,21 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+:root {
+  --primary-bg: #F7F2F2;
+  --primary-color: #DC7890;
+}
+
+[data-theme='dark'] {
+  --primary-bg: #2B2B2B;
+  --primary-color: #CFECC4;
 }
 
 body {
-  background-color: black;
+  background-color: black; /* Fallback color */
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -23,7 +34,7 @@ code {
   width: 393px;
   height: 60px;
   flex-shrink: 0;
-  background: #F7F2F2;
+  background: var(--primary-bg);
   display: flex;
   justify-content: space-between;
 }
@@ -37,7 +48,7 @@ code {
   flex-direction: column;
   justify-content: flex-end;
   flex-shrink: 0;
-  color: #DC7890;
+  color: var(--primary-color);
   font-feature-settings: 'clig' off, 'liga' off;
   font-family: Asap Condensed;
   font-size: 32px;
@@ -82,12 +93,11 @@ code {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 
 /* New/Updated styles */
 .slider g {
@@ -96,12 +106,12 @@ code {
 
 /* Position when unchecked (Light mode) */
 .switch input:not(:checked) + .slider g {
-  transform: translateX(0);
+  transform: translateX(35px);
 }
 
 /* Position when checked (Dark mode) */
 .switch input:checked + .slider g {
-  transform: translateX(-35px); /* Adjust this value based on the desired sliding distance */
+  transform: translateX(0px); /* Adjust this value based on the desired sliding distance */
 }
 
 
