@@ -80,6 +80,8 @@ code {
   flex-shrink: 0;
   border-radius: 100px;
   background: var(--button-bg);
+  color: var(--button-text);
+  font-size: 14px;
   margin: 0px 224px 17px 12px;
 }
 
