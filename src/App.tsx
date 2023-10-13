@@ -8,6 +8,7 @@ import HorizontalScroll from './components/HorizontalScroll'
 import Featured from './components/Featured'
 import NavBar from './components/NavBar';
 import Carousel from './components/Carousel';
+import Drinks from './components/Drinks';
 import SplitCard from './components/SplitCard';
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
         <Carousel />
         <HorizontalScroll items={scrollItems}/>
         <Featured title = {featuredTitle} description = {featuredCardDescription} buttonText= {featuredCardButtonText} imageUrl= {featuredCardImageUrl}/>
+        <Drinks buttonText= {featuredCardButtonText}/>
         <SplitCard items={favPlates} buttonText= {featuredCardButtonText}/>
         <Footer/>
       </CartProvider>
