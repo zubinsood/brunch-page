@@ -1,0 +1,118 @@
+.split-card-component {
+    margin: 10px 1.5px 34px 1.5px;
+}
+
+.split-card-container {
+    margin-top: 5px;
+    display: flex; 
+}
+
+.single-card-container {
+    max-width: 170px;
+    max-height: 316px;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+    margin: 0px 12.5px;
+    border-radius: 10px 10px 10px 10px;
+    flex-shrink: 0;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.single-card-image {
+    max-width: 170px;
+    max-height: 158px;
+    flex-shrink: 0;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.single-card-0-body, .single-card-1-body {
+    max-width: 170px;
+    max-height: 158px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 10px 10px;
+    background: var(--card-bg);
+}
+
+.single-card-0-body > .single-card-body-title {
+    color: var(--card-text);
+    margin: 9.5px 44.5px 0px 10.5px;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: SF Pro Text;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.165px;
+}
+
+.single-card-0-body > .single-card-body-text {
+    color: var(--card-text);
+    padding: 10px;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: SF Pro Text;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: -0.165px;
+}
+
+.single-card-0-body > .single-card-button {
+    width: 82px;
+    height: 28px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    margin: 0px 78px 12px 10px;
+    background: var(--button-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-card-1-body > .single-card-body-title {
+    color: var(--card-text);
+    padding: 10px;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: SF Pro Text;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.165px;
+}
+
+.single-card-1-body > .single-card-body-text {
+    color: var(--card-text);
+    padding: 0px 10px;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: SF Pro Text;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: -0.165px;
+}
+
+.single-card-1-body > .single-card-button {
+    width: 82px;
+    height: 28px;
+    margin: 25.5px 79px 12px 9px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: var(--button-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-card-button-text {
+    color: var(--button-text);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: SF Pro Text;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.165px;
+}

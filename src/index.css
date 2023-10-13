@@ -53,7 +53,7 @@ code {
   src: url('../public/fonts/SF-Pro-Text.otf') format('otf'),
 }
 
-.featured-title, .scroll-title {
+.featured-title, .scroll-title, .split-card-title {
   color: var(--primary-color);
   text-align: left;
   width: 299px;
@@ -81,9 +81,11 @@ code {
   border-radius: 100px;
   background: var(--button-bg);
   margin: 0px 224px 17px 12px;
+}
+
+.read-more-button-text {
   color: var(--button-text);
   white-space: nowrap;
-  text-align: center;
   font-feature-settings: 'clig' off, 'liga' off;
   font-family: 'SF Pro Text', sans-serif;
   font-size: 14px;
@@ -91,7 +93,6 @@ code {
   font-weight: 600;
   line-height: normal;
   letter-spacing: -0.165px;
-  padding: 5px 27px 6px 28px;
 }
 
 .read-more-button:active {
@@ -104,3 +105,4 @@ code {
 @import url('./styles/footer.css');
 @import url('./styles/horizontalscroll.css');
 @import url('./styles/navbar.css');
+@import url('./styles/splitcard.css');
