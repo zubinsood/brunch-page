@@ -1,0 +1,54 @@
+.footer-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.background-box {
+    width: 393px;
+    height: 421px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: var(--footer-bg);
+}
+
+.hours-box {
+    width: 159px;
+    height: 108.01px;
+    left: 26px;
+    top: 262.30px;
+    position: absolute;
+    color: var(--card-text);
+    text-align: left;
+    font-size: 14px;
+    font-family: 'ABeeZee', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.image-box {
+    /* width: 122px;
+    height: 120.13px;
+    left: 11px;
+    top: 13.23px;
+    position: absolute; */
+    width: 122px;
+    height: 120.128px;
+    flex-shrink: 0;
+    margin-left: 11px;
+    background: var(--footer-icon);
+}
+
+.info-box {
+    width: 159px;
+    left: 25px;
+    top: 150.99px;
+    position: absolute;
+    color: var(--card-text);
+    text-align: left;
+    font-size: 14px;
+    font-family: 'ABeeZee';
+    font-weight: 400;
+    word-wrap: break-word;
+}
