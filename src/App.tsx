@@ -37,7 +37,7 @@ function App() {
         <Carousel />
         <HorizontalScroll items={scrollItems}/>
         <Featured title = {featuredTitle} description = {featuredCardDescription} buttonText= {featuredCardButtonText} imageUrl= {featuredCardImageUrl}/>
-        <SplitCard items={favPlates}/>
+        <SplitCard items={favPlates} buttonText= {featuredCardButtonText}/>
         <Footer/>
       </CartProvider>
     </ThemeProvider>
