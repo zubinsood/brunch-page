@@ -41,6 +41,7 @@
   .image-1 {
     height: 107px;
     width: 107px;
+    min-width: 107px;
     background-image: url('../../public/images/Mojito_Drink.png');
     background-size: cover; 
     
@@ -49,6 +50,7 @@
   .image-2 {
     height: 107px;
     width: 107px;
+    min-width: 107px;
     background-image: url('../../public/images/Coffee_drink.png');
     background-size: cover; 
   }
@@ -56,7 +58,8 @@
   
   .image-3 {
     height: 120px;
-    width: 120px;
+    width: 107px;
+    min-width: 107px;
     background-image: url('../../public/images/Caramel_Coffee.png');
     background-size: cover; 
     background-position: 107px -10px;

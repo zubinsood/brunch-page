@@ -18,10 +18,8 @@ const Drinks: React.FC<DrinkProps> = ({buttonText}) => {
             <div className="description">
               Refreshing original blend of Japanese Shiso, Yuzu, Sake, and Lemon.
             </div> <br/>
-            {/* <Button buttonText={buttonText}/> */}
-          <button className="drinks-button">
-            <div className="drinks-button-text">Add to cart</div>
-          </button>
+      git 
+            <Button buttonText="Add to cart"/>
           </div>
         </div>
         <div className="row">
@@ -31,9 +29,7 @@ const Drinks: React.FC<DrinkProps> = ({buttonText}) => {
             <div className="description">
               A velvety, hand-sifted fan favorite that is perfect for cozy weather.
             </div> <br/>
-            <button className="drinks-button">
-            <div className="drinks-button-text">Add to cart</div>
-          </button>
+            <Button buttonText="Add to cart"/>
             </div>
         </div>
         <div className="row">
@@ -43,9 +39,7 @@ const Drinks: React.FC<DrinkProps> = ({buttonText}) => {
             <div className="description1">
               A soft and sweet treat! Treat yourself to our creamy Maple Latte with our staple toasts.
             </div> <br/>
-            <button className="drinks-button1">
-            <div className="drinks-button-text1">Add to cart</div>
-            </button>
+            <Button buttonText="Add to cart"/>
           </div>
         </div>
       </div>
