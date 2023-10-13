@@ -14,6 +14,8 @@
   --card-bg: #fff;
   --button-text: #EED6D6;
   --button-bg: #DC7890;
+  --button-click-bg: #EED6D6;
+  --button-click-text: #DC7890;
 }
 
 [data-theme='dark'] {
@@ -25,6 +27,8 @@
   --card-bg: #414141;
   --button-text: #CFECC4;
   --button-bg: #61C23E;
+  --button-click-bg: #CFECC4;
+  --button-click-text: #61C23E;
 }
 
 body {
@@ -47,7 +51,7 @@ code {
   src: url('../public/fonts/SF-Pro-Text.otf') format('otf'),
 }
 
-.featured-title, .scroll-title, .drinks-title {
+.featured-title, .scroll-title, .split-card-title, .drinks-title {
   color: var(--primary-color);
   text-align: left;
   width: 299px;
@@ -63,28 +67,37 @@ code {
 }
 
 .read-more-button {
+  transition: none;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
   width: 127px;
   height: 28px;
   flex-shrink: 0;
   border-radius: 100px;
   background: var(--button-bg);
+  color: var(--button-text);
+  font-size: 14px;
   margin: 0px 224px 17px 12px;
 }
 
 .read-more-button-text {
   color: var(--button-text);
   white-space: nowrap;
-  text-align: center;
   font-feature-settings: 'clig' off, 'liga' off;
   font-family: 'SF Pro Text', sans-serif;
   font-size: 14px;
-  height: 17px;
-  width: 72px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   letter-spacing: -0.165px;
-  padding: 5px 27px 6px 28px;
+}
+
+.read-more-button:active {
+  background: var(--button-click-bg);
+  color: var(--button-click-text);
 }
 
 @import url('./styles/carousel.css');
@@ -93,3 +106,4 @@ code {
 @import url('./styles/horizontalscroll.css');
 @import url('./styles/navbar.css');
 @import url('./styles/drinks.css');
+@import url('./styles/splitcard.css');
