@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ThemeProvider } from './contexts/ThemeContext';
+import { CartProvider } from './contexts/CartContext';
 import logo from './logo.svg';
 import './App.css';
 import Footer from './components/Footer'
@@ -31,12 +32,14 @@ function App() {
 
   return (
     <ThemeProvider>
-      <NavBar />
-      <Carousel />
-      <HorizontalScroll items={scrollItems}/>
-      <Featured title = {featuredTitle} description = {featuredCardDescription} buttonText= {featuredCardButtonText} imageUrl= {featuredCardImageUrl}/>
-      <SplitCard items={favPlates}/>
-      <Footer/>
+      <CartProvider>
+        <NavBar />
+        <Carousel />
+        <HorizontalScroll items={scrollItems}/>
+        <Featured title = {featuredTitle} description = {featuredCardDescription} buttonText= {featuredCardButtonText} imageUrl= {featuredCardImageUrl}/>
+        <SplitCard items={favPlates}/>
+        <Footer/>
+      </CartProvider>
     </ThemeProvider>
   );
 }

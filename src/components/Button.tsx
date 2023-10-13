@@ -1,14 +1,15 @@
 import React from 'react';
+import { useCart } from '../contexts/CartContext';
 
 interface ButtonProps {
   buttonText: string;
 }
 
 const Button: React.FC<ButtonProps> = ({ buttonText }) => {
+  const { addToCart } = useCart();
+
   return (
-    <div className='read-more-button'>
-      <div className='button-text'>{buttonText}</div>
-    </div>
+    <button className='read-more-button' onClick={addToCart}>{buttonText}</button>
   );
 };
 
