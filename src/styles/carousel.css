@@ -40,6 +40,7 @@
     margin: 0 164px 0 163px;
     border-radius: 44.5px;
     background: var(--iconbar-color);
+    z-index: 4;
 }
 
 .dot {
