@@ -2,7 +2,6 @@
 .description {
     color: var(--card-text);
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Helvetica;
     font-size: 13px;
     font-style: normal;
     font-weight: 300;
@@ -15,7 +14,6 @@
   .drink-name {
     color: var(--card-text);
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: SF Pro Text;
     font-size: 13px;
     font-style: normal;
     font-weight: 600;
@@ -29,7 +27,6 @@
     padding: 9px;
     color: #000;
   font-feature-settings: 'clig' off, 'liga' off;
-  font-family: Helvetica;
   font-size: 11px;
   font-style: normal;
   font-weight: 300;
@@ -76,7 +73,6 @@
    .drinks-button-text {
     color: var(--button-text);
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: SF Pro Text;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -87,7 +83,6 @@
    .drink-name1 {
     color: var(--card-text);
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: SF Pro Text;
     font-size: 13px;
     font-style: normal;
     font-weight: 600;
@@ -99,7 +94,6 @@
    .description1 {
     color: var(--card-text);
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Helvetica;
     font-size: 13px;
     font-style: normal;
     font-weight: 300;
@@ -120,7 +114,6 @@
   .drinks-button-text1 {
     color: var(--button-text);
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: SF Pro Text;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;

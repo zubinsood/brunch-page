@@ -18,7 +18,6 @@ const Drinks: React.FC<DrinkProps> = ({buttonText}) => {
             <div className="description">
               Refreshing original blend of Japanese Shiso, Yuzu, Sake, and Lemon.
             </div> <br/>
-      git 
             <Button buttonText="Add to cart"/>
           </div>
         </div>
