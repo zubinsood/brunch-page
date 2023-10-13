@@ -1,7 +1,11 @@
 import React from 'react';
 import Button from './Button';
 
-const Drinks: React.FC = () => {
+interface DrinkProps {
+  buttonText: string;
+}
+
+const Drinks: React.FC<DrinkProps> = ({buttonText}) => {
   return (
     <div>
       <h1 className='drinks-title'>Drinks</h1> {/* Title added here */}
@@ -14,6 +18,7 @@ const Drinks: React.FC = () => {
             <div className="description">
               Refreshing original blend of Japanese Shiso, Yuzu, Sake, and Lemon.
             </div> <br/>
+            {/* <Button buttonText={buttonText}/> */}
           <button className="drinks-button">
             <div className="drinks-button-text">Add to cart</div>
           </button>
@@ -34,12 +39,12 @@ const Drinks: React.FC = () => {
         <div className="row">
           <div className="image-3" />
           <div>
-            <div className='drink-name'>Maple Latte</div>
-            <div className="description">
+            <div className='drink-name1'>Maple Latte</div>
+            <div className="description1">
               A soft and sweet treat! Treat yourself to our creamy Maple Latte with our staple toasts.
             </div> <br/>
-            <button className="drinks-button">
-            <div className="drinks-button-text">Add to cart</div>
+            <button className="drinks-button1">
+            <div className="drinks-button-text1">Add to cart</div>
             </button>
           </div>
         </div>

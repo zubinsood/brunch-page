@@ -31,7 +31,7 @@ function App() {
       <Carousel />
       <HorizontalScroll items={scrollItems}/>
       <Featured title = {featuredTitle} description = {featuredCardDescription} buttonText= {featuredCardButtonText} imageUrl= {featuredCardImageUrl}/>
-      <Drinks />
+      <Drinks buttonText= {featuredCardButtonText}/>
       <Footer/>
     </ThemeProvider>
   );
