@@ -21,9 +21,13 @@ interface CartProviderProps {
 
 export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
   const [cartCount, setCartCount] = useState<number>(0);
+  const [clickCount, setClickCount] = useState<number>(0);
 
   const addToCart = () => {
-    setCartCount(prevCount => prevCount + 1);
+    if (clickCount < 3) {
+      setCartCount(prevCount => prevCount + 1);
+      setClickCount(prevClick => prevClick + 1);
+    }
   };
 
   return (
