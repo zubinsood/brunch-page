@@ -4,7 +4,7 @@ import { useTheme } from '../contexts/ThemeContext';
 interface ScrollItemProps {
   imageUrl: string;
   text: string;
-  id: number; // Use an id or any other unique identifier
+  id: number;
 }
 
 const HorizontalScrollItem: React.FC<ScrollItemProps> = ({ id, imageUrl, text }) => {

@@ -2,7 +2,6 @@
 .description {
     color: var(--card-text);
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Helvetica;
     font-size: 13px;
     font-style: normal;
     font-weight: 300;
