@@ -7,6 +7,7 @@ import HorizontalScroll from './components/HorizontalScroll'
 import Featured from './components/Featured'
 import NavBar from './components/NavBar';
 import Carousel from './components/Carousel';
+import SplitCard from './components/SplitCard';
 
 function App() {
   const [featuredTitle, setFeaturedTitle] = useState<string>("Davelle’s Original Uni Pasta");
@@ -23,6 +24,10 @@ function App() {
     { imageUrl: '/images/stripe-toast-1.png', text: 'Mentai Mayo' },
     { imageUrl: '/images/lemon-toast-1.png', text: 'Honey Lemon' },
   ]);
+  const [favPlates, setFavPlates] = useState([
+    { imageUrl: '/images/mentai-cheese.png', name: 'Mentai Cheese Potato Croquettes', text: "These croquettes are wonderfully crispy on the outside and scrumptiously soft and cheesy inside."},
+    { imageUrl: '/images/katsudon.png', name: 'Katsudon', text: "Our Katsu is a deep-fried chicken cutlet and it’s cooked with egg, onions and our special sauce."},
+  ]);
 
   return (
     <ThemeProvider>
@@ -30,6 +35,7 @@ function App() {
       <Carousel />
       <HorizontalScroll items={scrollItems}/>
       <Featured title = {featuredTitle} description = {featuredCardDescription} buttonText= {featuredCardButtonText} imageUrl= {featuredCardImageUrl}/>
+      <SplitCard items={favPlates}/>
       <Footer/>
     </ThemeProvider>
   );

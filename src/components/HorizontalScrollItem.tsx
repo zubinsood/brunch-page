@@ -10,7 +10,6 @@ interface ScrollItemProps {
 const HorizontalScrollItem: React.FC<ScrollItemProps> = ({ id, imageUrl, text }) => {
   const { isToggled } = useTheme();
 
-  // Generate a unique class name using the id
   const uniqueClassName = `scroll-item-img-${id}`;
 
   return (
