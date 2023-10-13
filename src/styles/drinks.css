@@ -26,15 +26,17 @@
   display: flex;
   padding: 9px;
   color: #000;
-  font-feature-settings: 'clig' off, 'liga' off;
   font-size: 11px;
   font-style: normal;
   font-weight: 300;
   line-height: 15px;
   letter-spacing: -0.165px;
-  
-  
   }
+
+  .row-container {
+    width: 200px;
+  }
+
   .image-1 {
     height: 107px;
     width: 107px;
