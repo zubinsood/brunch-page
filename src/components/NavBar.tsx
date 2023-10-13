@@ -17,7 +17,7 @@ function NavBar() {
             </div>
             <div className="navbar-right">
                 <div className="cart-container">
-                    {cartCount > 0 ? (
+                    {(cartCount > 0) && (cartCount < 4) ? (
                         <div className="cart-icon">
                         {isToggled ? (
                             // SVG for toggled state when cartCount > 0
